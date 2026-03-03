@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Lab</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔓 Brute Force Lab</h1>
+            <p>A cybersecurity simulation by <strong>Folahan Testimony</strong></p>
+        </div>
+
+        <div class="card">
+            <label>Enter a password to crack (max 8 characters)</label>
+            <input type="text" id="passwordInput" maxlength="8" placeholder="e.g. admin123" />
+            <button id="startBtn" onclick="startCrack()">Start Attack</button>
+        </div>
+
+        <div class="result-box" id="resultBox" style="display:none;">
+            <div class="stat">
+                <span>Status</span>
+                <strong id="statusText">—</strong>
+            </div>
+            <div class="stat">
+                <span>Attack Method</span>
+                <strong id="method">—</strong>
+            </div>
+            <div class="stat">
+                <span>Password Found</span>
+                <strong id="foundPassword">—</strong>
+            </div>
+            <div class="stat">
+                <span>Total Attempts</span>
+                <strong id="attempts">—</strong>
+            </div>
+            <div class="stat">
+                <span>Time Taken</span>
+                <strong id="timeTaken">—</strong>
+            </div>
+            <div class="stat">
+                <span>Password Strength</span>
+                <strong id="strength">—</strong>
+            </div>
+        </div>
+
+        <div class="loader" id="loader" style="display:none;">
+            Cracking in progress...
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
