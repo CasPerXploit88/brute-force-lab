@@ -1,0 +1,5 @@
+wordlist.txt
+.venv/
+__pycache__/
+*.pyc
+results/logs.txt
