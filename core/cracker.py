@@ -3,7 +3,7 @@ import time
 from itertools import product
 
 charset = string.ascii_letters + string.digits + string.punctuation
-TIMEOUT = 10
+TIMEOUT = 30
 
 def load_wordlist():
     try:
